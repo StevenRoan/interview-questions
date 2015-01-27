@@ -1,4 +1,5 @@
-// 3 kinds of Function Invocation:
+// 4 kinds of Function Invocation:
+// Invocations normal function
 // Invocation as constructor
 // Invocation as method
 // Invocation by apply and call
@@ -22,8 +23,8 @@ var c2 = new class2();
 c2.returnVar = c1.returnVar;
 
 //-----
+console.log('Invocation as normal F (global): ', returnVar());
 //Invocation as method -> 'this' indicate caller not callee
-console.log('Invocation as method (global): ', returnVar());
 console.log('Invocation as method (class1):  ', c1.returnVar());
 console.log('Invocation as method (class2):  ', c2.returnVar());
 
