@@ -1,11 +1,12 @@
 //
-// Given an array of asynchronous functions(tasks), implement a function to provide serilization
-// execution for asynchronous functions and execute a final callback after all the tasks are done.
-// This function need to stop execution if any error happened, and get the all the results in finalback.
-// NOTE: Input of each element function in the input array is "function(callback)" and input
-// of this callback function is "function(error, result)".
-// NOTE you can assume input parameter must be valid.
+// Given an array of asynchronous functions(tasks), implement a function to provide serialization execution for asynchronous functions and execute a final callback after all the tasks are done.
+// This function needs to stop execution if any error happened, and if no error happens, the function get all the results in final callback.
+//  NOTE: Input of each element function in the input array is "function(callback)" and input
+//  of this callback function is "function(error, result)". For the final callback, let’s assume the input are function “(error, results)”
 //
+//  NOTE you can assume input parameter must be valid.
+//
+
 //Example
 function f1(callback){
     setTimeout(callback,1000, null, "f1");
