@@ -13,11 +13,11 @@ function Class2 () {
     this.cname = "Class2";
 }
 
-var instantce1 = new Class1();
-var instantce2 = new Class2();
+var instance1 = new Class1();
+var instance2 = new Class2();
 
 
-console.log(instantce1.fun1());
-console.log(instantce1.fun1.bind(instantce2));
-console.log(instantce1.fun1.bind(instantce2)());
+console.log(instance1.fun1());
+console.log(instance1.fun1.bind(instance2));
+console.log(instance1.fun1.bind(instance2)());
 

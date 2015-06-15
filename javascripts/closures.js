@@ -5,7 +5,7 @@
 if (process.argv[2] === 'A') {
     var scope = 'global';
 
-    outer = function () {
+    var outer = function () {
         var scope = 'local';
         function inner() {
             console.log(scope);
@@ -19,7 +19,7 @@ if (process.argv[2] === 'A') {
 if (process.argv[2] === 'B') {
     var scope = 'global';
 
-    outer = function () {
+    var outer = function () {
         var scope = 'local';
 
         function inner() {
